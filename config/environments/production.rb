@@ -77,4 +77,8 @@ Testproject::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Required for Heroku
+  # Note Set this to actual hoset
+  config.action_mailer.default_url_options = { :host => 'http://omr-sergej-tolzv2.herokuapp.com/' }
 end

@@ -1,4 +1,5 @@
 Testproject::Application.routes.draw do
+  devise_for :users
   root "pages#home"
   get "about" => "pages#about" # cerates about_path
   get "team" => "pages#team" # cerates team_path
